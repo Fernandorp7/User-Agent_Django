@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio User Agent</title>
+
+        <style>
+        .index{
+            font-family: 'Lato', sans-serif;
+        }
+
+        .header {
+            background-color: lightgreen;
+            color: white;
+            margin-top: 0;
+            padding: 20px 20px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: white;
+        }
+
+        button{
+            background-color: lightgreen;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body class="index">
+    <div class="header">
+        <h1>Bienvenido a mi página</h1>
+        <h4>Creado por Fernando Romero</h4>
+    </div>
+
+    <p><br></p>
+
+    <h3> Para ver la información del User-Agent pulse aquí:</h3>
+    <button>
+        <h3><a href="{% url 'info' %}">-INFO-</a></h3>
+    </button>
+
+    <p><br><br></p>
+
+    <h3> Para ver más información sobre el dispositivo desde el que accede pulse aquí:</h3>
+    <button>
+        <h3><a href="{% url 'sobreMi' %}">-SOBRE MÍ-</a></h3>
+    </button>
+</body>
+
+</html>

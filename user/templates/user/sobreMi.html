@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+
+        .header {
+            background-color: lightgreen;
+            color: white;
+            margin-top: 0;
+            padding: 20px 20px;
+        }
+
+        .info{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>User-Agent</h1>
+        <h4>Página de información sobre el dispostivio en el que te encuentras</h4>
+    </div>
+
+    <div class="info">
+        <p>{{ data }}</p>
+        <p>Host: {{ host }}</p>
+        <p>IP: {{ ip }}</p>
+        <p>{{ tactil }}</p>
+    </div>
+
+</body>
+
+</html>
